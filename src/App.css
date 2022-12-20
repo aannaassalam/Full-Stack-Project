@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.analytics-card {
+  background-color: #fff;
+  border: 1px solid #4b465c1f;
+  border-radius: 6px;
+  width: 100%;
+  padding: 15px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-secondary {
+  color: #33303c61;
+}
+
+.text-primary {
+  color: #33303cde;
+}
+
+.text-grey {
+  color: #33303cad;
+}
+
+.text-green {
+  color: #28c76f;
+}
+
+.text-green {
+  color: #ea5455;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "a b b b b";
+}
+
+.App main {
+  grid-area: b;
+  padding: 40px;
+}
+
+.App main.no-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.App main.no-data p {
+  font-size: 30px;
+  color: #33303c61;
+  font-weight: 500;
+}
+
+.App main .internal {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  /* grid-template-areas:
+    "one two two"
+    "three three three"
+    "four four five"; */
+}
+
+.App main .internal .analytics-card {
+  /* min-height: 300px; */
+  /* width: 100%;
+  border: 1px solid #ccc; */
+}
+
+.App main .analytics-card h3 {
+  margin-bottom: auto;
+}
+
+.App main .analytics-card:nth-child(1) {
+  grid-column: span 2;
+}
+
+.App main .analytics-card:nth-child(2) {
+  grid-column: 3 / span 4;
+}
+
+.App main .d-flex:nth-child(3) {
+  grid-column: span 4;
+  /* margin-left: auto;
+  margin-right: auto; */
+  width: calc(100% + 30px);
+}
+
+.App main .d-flex .item-span {
+  /* grid-column: span 3; */
+  display: flex;
+  gap: 15px;
+  /* grid-template-columns: repeat(3, 1fr); */
+}
+
+.App main .d-flex .item-span .analytics-card {
+  height: auto;
+}
+
+.App main .analytics-card:nth-child(4) {
+  grid-column: 1 / span 2;
+}
+.App main .analytics-card:nth-child(5) {
+  grid-column: 3 / span 4;
+}
+/* .App main .item:nth-child(5) {
+  grid-area: five;
+}
+.App main .item:nth-child(6) {
+  grid-area: five;
+} */

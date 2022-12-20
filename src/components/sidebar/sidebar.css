@@ -1,0 +1,80 @@
+.sidebar {
+  width: 300px;
+  padding: 15px 30px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  height: 100vh;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  left: 0;
+  grid-area: a;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+
+.sidebar .filter-item {
+  padding: 10px 0;
+  margin-bottom: 0px;
+}
+
+.sidebar .filter-item:nth-child(2) {
+  padding: 5px 12px 30px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sidebar .filter-item:nth-child(3) {
+  padding: 5px 12px 30px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sidebar .filter-item .name {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.sidebar .filter-item:nth-child(2) .name,
+.sidebar .filter-item:nth-child(3) .name {
+  margin-bottom: 25px;
+}
+
+.sidebar .filter-item .range-input,
+.sidebar .filter-item .range-input {
+  padding: 0 10px;
+}
+
+.sidebar .buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.sidebar .buttons button {
+  all: unset;
+  padding: 8px 10px;
+  text-align: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.sidebar .buttons .save {
+  background-color: #3f51b5;
+  color: #fff;
+}
+
+.sidebar .buttons .reset {
+  background-color: #ddd;
+  border: 1px solid #ccc;
+}
