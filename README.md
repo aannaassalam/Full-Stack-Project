@@ -13,7 +13,7 @@ This should be run in 2 directories: Root directory & Server directory for the r
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view client in your browser.
+Open [http://localhost:3000](http://localhost:3000) to view client in your browser.\
 Open [http://localhost:5000](http://localhost:5000) in either your Browser or Postman to check the APIs.
 
 The page will reload when you make changes.\
