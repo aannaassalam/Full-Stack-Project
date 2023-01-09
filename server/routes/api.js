@@ -3,6 +3,7 @@ const router = express.Router();
 const blackcoffer = require("../Model/blackcoffer_model");
 
 router.get("/", (req, res) => {
+  console.log("hit");
   blackcoffer
     .find()
     .then((items) => res.send(items))
