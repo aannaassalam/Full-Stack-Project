@@ -20,7 +20,7 @@ function App() {
   const init = (setLoading) => {
     setLoading(true);
     axios
-      .get("http://localhost:5000/api/")
+      .get("https://full-stack-project-upro.onrender.com/api/")
       .then((res) => {
         setData(res.data);
         setLoading(false);
